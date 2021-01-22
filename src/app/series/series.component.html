@@ -1,0 +1,21 @@
+<div class="main-container" [formGroup]="formSeries">
+    <div class="serie-container">
+       <mat-form-field>
+           <mat-label>Nombre</mat-label>
+           <input matInput placeholder="" formControlName="nombre">
+       </mat-form-field>
+       <mat-form-field>
+           <mat-label>plataforma</mat-label>
+           <input matInput formControlName="plataforma">
+       </mat-form-field>
+       <mat-form-field>
+           <mat-label>duracion</mat-label>
+           <input type="number" matInput formControlName="duracion">
+       </mat-form-field>
+       <button mat-raised-button color="primary"  [disabled]="formSeries.invalid" (click)="saveClick()"> 
+   
+           Ingresar
+       
+         </button>
+    </div>
+   </div>
